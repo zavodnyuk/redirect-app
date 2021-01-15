@@ -2,7 +2,7 @@ version: "3"
 
 services:
   deluge:
-    image: redirect_app
+    image: zavodniuk/redirect-app
     container_name: redirect_deluge_app
     restart: unless-stopped
     ports:

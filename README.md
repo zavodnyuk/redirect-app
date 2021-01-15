@@ -8,20 +8,19 @@ Eventually it must be replaced with static domain name and use local dns resolve
 
 Simple node aaplication with only one listener function that redicts to predirefined static url. Wrapped into docker container
 
-# Build first 
+# Build
 - cd into project directory
 
 - `docker build -t redirect_app .`
 
 # Run in docker
-
 ```
 docker run \
 -p 8666:80 \
 --name redirect_test \
 --restart=unless-stopped \
 -e TARGET_URL=https://google.com \
--d redirect_app:latest
+-d zavodniuk/redirect_app
 ```
 
 # Run in docker-compose
@@ -30,7 +29,7 @@ version: "3"
 
 services:
   deluge:
-    image: redirect_app
+  image: zavodniuk/redirect_app
     container_name: redirect_deluge_app
     restart: unless-stopped
     ports:
