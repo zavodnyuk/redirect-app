@@ -11,11 +11,11 @@ Simple node aaplication with only one listener function that redicts to prediref
 # Build first 
 - cd into project directory
 
-- ```docker build -t redirect_app .`
+- `docker build -t redirect_app .`
 
 # Run in docker
 
-```````````````````
+```
 docker run \
 -p 8666:80 \
 --name redirect_test \
@@ -25,5 +25,16 @@ docker run \
 ```
 
 # Run in docker-compose
+```
+version: "3"
 
-
+services:
+  deluge:
+    image: redirect_app
+    container_name: redirect_deluge_app
+    restart: unless-stopped
+    ports:
+      - ${DELUGE_PORT}:80
+    environment:
+      - TARGET_URL=${DELUGE_TARGET_URL}
+```
