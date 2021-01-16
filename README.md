@@ -14,6 +14,10 @@ Simple node aaplication with only one listener function that redicts to prediref
 - `docker build -t redirect_app .`
 
 # Run in docker
+<a href="https://hub.docker.com/r/zavodniuk/redirect-app"><img src="https://img.shields.io/docker/pulls/zavodniuk/redirect-app?style=flat&amp;color=blue" alt="Docker Pulls"></a>
+<a href="https://hub.docker.com/r/zavodniuk/redirect-app"><img src="https://img.shields.io/docker/image-size/zavodniuk/redirect-app/latest" alt="Docker Size"></a>
+
+
 ```
 docker run \
 -p 8666:80 \
