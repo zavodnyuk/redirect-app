@@ -1,4 +1,11 @@
 # Redirect app
+<a href="https://github.com/zavodnyuk/redirect-app">
+  <img src="https://img.shields.io/github/languages/code-size/zavodnyuk/redirect-app?style=flat&amp;color=blue" alt="Code Size">
+</a> 
+<a href="https://github.com/zavodnyuk/redirect-app">
+  <img src="https://img.shields.io/github/repo-size/zavodnyuk/redirect-app?style=flat&color=blue" alt="Code Size">
+</a>
+
 
 Faced with issue when I (or someone from familly) get used to local urls. And it's annoying for them to learn new urls every time I change configs / use new domain name / port. So as a workaround I decided to redirect them.
 
